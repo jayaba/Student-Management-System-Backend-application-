@@ -24,7 +24,7 @@ public class StudentController {
         return new ResponseEntity<>(saveStudent, HttpStatus.CREATED);
     }
 
-    @GetMapping("all")
+    @GetMapping("all") //git test
     public ResponseEntity<List<StudentDto>> getAllStudent(){
         List<StudentDto> allStudent = studentService.getAllStudent();
         return new ResponseEntity<>(allStudent,HttpStatus.OK);
